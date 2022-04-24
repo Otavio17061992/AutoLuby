@@ -1,0 +1,20 @@
+main > .content {
+    display: block;
+    margin: 3rem auto;
+    padding: 0 7rem;
+    /* width: 77vw;*/
+}
+
+main > .content .intro {
+    margin-bottom: 2rem;
+}
+
+main > .content .intro > .subtitle {
+    margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 1024px) {
+    main > .content {
+        padding: 0 2rem;
+    }
+}

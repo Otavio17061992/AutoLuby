@@ -1,0 +1,140 @@
+.dataTable {
+    background: #ffffff;
+    border: 1px solid var(--corBordaInput);
+    box-shadow: 0px 0px 6px var(--corSombras);
+    padding: 2rem;
+    border-radius: var(--radius);
+}
+
+.dataTable .headerTable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2.5rem;
+}
+
+.dataTable .headerTable > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.dataTable table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.dataTable table thead {
+    background: var(--corFundoInput);
+    border-radius: var(--radius);
+}
+
+.dataTable table th,
+.dataTable table td {
+    padding: 1.5rem;
+    word-break: break-word;
+}
+
+.dataTable table th {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.dataTable table td > span {
+    color: var(--corTitulo);
+    font-weight: 500;
+}
+
+.dataTable table td.Vendido > span,
+.dataTable table td.Disponível > span,
+.dataTable table td.Reservado > span {
+    padding: 5px;
+    border-radius: var(--radius);
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+}
+
+.dataTable table td.Vendido > span {
+    color: var(--corPrimaria);
+    background: rgba(245, 74, 72, 0.2);
+}
+.dataTable table td.Disponível > span {
+    color: #34c38f;
+    background: rgba(52, 195, 143, 0.2);
+}
+.dataTable table td.Reservado > span {
+    color: #fac12f;
+    background: rgba(250, 193, 47, 0.2);
+}
+
+@media screen and (min-width: 1025px) {
+    .dataTable table tr.lastLarger > th:last-child {
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dataTable {
+        padding: 1rem;
+    }
+
+    .dataTable h3 {
+        text-align: center;
+    }
+
+    .dataTable table {
+        border: 0;
+    }
+
+    .dataTable .headerTable > div {
+        justify-content: center;
+    }
+
+    .dataTable table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .dataTable table th,
+    .dataTable table td {
+        padding: 0.5rem 1rem;
+    }
+
+    .dataTable table tr {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid var(--corBordaInput);
+        box-shadow: 0px 0px 6px var(--corSombras);
+        /* padding: 2rem; */
+        border-radius: var(--radius);
+        margin-bottom: 1.5rem;
+    }
+
+    .dataTable table td {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .dataTable table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

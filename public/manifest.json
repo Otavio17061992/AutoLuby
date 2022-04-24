@@ -1,0 +1,8 @@
+{
+  "short_name": "AutoLuby",
+  "name": "AutoLuby Frontend ReactJS",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f54a48",
+  "background_color": "#f54a48"
+}

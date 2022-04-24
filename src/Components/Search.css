@@ -1,0 +1,22 @@
+.formSearch {
+    background: var(--corFundoInput);
+    border: 1px solid var(--corBordaInput);
+    box-shadow: 0px 0px 6px var(--corSombras);
+    border-radius: var(--radius);
+    max-width: 200px;
+}
+
+.formSearch input,
+.formSearch button {
+    background: none;
+    border: none;
+    padding: 0.65rem;
+}
+
+.formSearch input {
+    width: 80%;
+}
+
+.formSearch button {
+    width: 20%;
+}

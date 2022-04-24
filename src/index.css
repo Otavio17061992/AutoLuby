@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --corPrimaria: #f54a48;
+    --corSecundaria: #fa982f;
+    --corFundo: #ffffff;
+
+    --corTitulo: #3c3c3c;
+    --corTexto: #a2a2a2;
+
+    --corFundoInput: #f9f9f9;
+    --corBordaInput: #e6e6e6;
+    --corBotao: #f54a48;
+    --corBotaoHover: #df3938;
+    --corBordaBotao: #971212;
+
+    --corSombras: rgba(162, 162, 162, 0.25);
+
+    --radius: 3px;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*:not(a) {
+    color: var(--corTexto);
+}
+
+*:not(h1, h2, h3, h4, h5) {
+    font-size: 0.95rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--corTitulo);
+}
+
+.logo {
+    width: 235px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--corPrimaria);
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        width: 150px;
+    }
+}

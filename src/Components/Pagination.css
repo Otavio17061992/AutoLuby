@@ -1,0 +1,48 @@
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pagination * {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.pagination .buttonsPages {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination .navNextPrev {
+    background: var(--corFundo);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: var(--corTexto);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pagination .navNextPrev.inactive {
+    background: #ededed;
+}
+
+.pagination .buttonsPages a {
+    background: var(--corFundo);
+    padding: 5px 12px;
+    border-radius: var(--radius);
+}
+
+.pagination .buttonsPages a.active {
+    background: var(--corPrimaria);
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    .pagination {
+        justify-content: center;
+    }
+}

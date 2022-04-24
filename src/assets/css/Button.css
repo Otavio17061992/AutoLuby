@@ -1,0 +1,25 @@
+.button {
+    background: var(--corBotao);
+    border: 1.5px solid transparent;
+    border-radius: var(--radius);
+    padding: 10px;
+    width: 100%;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.button > i {
+    color: #ffffff;
+}
+
+.button:hover {
+    background: var(--corBotaoHover);
+}
+
+.button:active {
+    border-color: var(--corBordaBotao);
+}

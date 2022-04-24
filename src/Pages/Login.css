@@ -1,0 +1,88 @@
+.login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login .left {
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.login > div {
+    width: 50%;
+    min-height: 100vh;
+}
+
+.login .auth {
+    text-align: left;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.login .auth > div {
+    width: 400px;
+}
+
+.login .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login .links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.login .signUp {
+    margin-top: 2rem;
+}
+
+.login .background {
+    background-image: url('../assets/images/bgLogin.jpg');
+}
+
+@media screen and (max-width: 1024px) {
+    .login .background {
+        display: none;
+    }
+
+    .login > div,
+    .login .auth,
+    .login .auth > div {
+        width: 100%;
+    }
+
+    .login .auth,
+    .login .signUp {
+        text-align: center;
+    }
+
+    .login .auth {
+        gap: 2rem;
+    }
+
+    .login .links,
+    .login .left {
+        justify-content: center;
+    }
+
+    .login .left {
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    .login .form {
+        gap: 1rem;
+        text-align: left;
+    }
+}
