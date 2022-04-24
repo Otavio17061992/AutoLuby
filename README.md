@@ -1,4 +1,4 @@
-Sistema para gerenciamento de loja de veículos 💻🚗
+Sistema para gerenciamento de loja de veículos 
 
 Aplicação desenvolvida em ReactJS
 
